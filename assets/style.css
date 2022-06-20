@@ -15,11 +15,20 @@ body{
 
 }
 
+a{
+	color: aqua;
+}
+a:visited{
+	color: green;
+}
+a:hover{
+	color: yellow;
+}
 @keyframes main_background{
 	0%{
 		background-image: url('images/mainbg-1.jpg');
 		opacity: 0;
-		// transform: translateX(-2vw);
+		transform: translateX(-2vw);
 	}
 	5%{
 		background-image: url('images/mainbg-1.jpg');
@@ -32,12 +41,12 @@ body{
 	50%{
 		background-image: url('images/mainbg-1.jpg');
 		opacity: 0;
-		//transform: translateX(+2vw);
+		transform: translateX(+2vw);
 	}
 	51%{
 		background-image: url('images/mainbg-2.jpg');
 		opacity: 0;
-		//transform: translateX(+2vw);
+		transform: translateX(+2vw);
 	}
 	55%{
 		background-image: url('images/mainbg-2.jpg');
@@ -50,9 +59,10 @@ body{
 	100%{
 		background-image: url('images/mainbg-2.jpg');
 		opacity: 0;
-		//transform: translateX(-2vw);
+		transform: translateX(-2vw);
 	}
 }
+
 
 .dark_bg{
 	width: 100%;
