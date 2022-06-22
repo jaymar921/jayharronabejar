@@ -84,6 +84,10 @@ a:hover{
 	transition: 500ms;
 }
 
+.navigation a:hover{
+	color: yellow;
+}
+
 .container{
 	position: absolute;
 	top: 50%;
