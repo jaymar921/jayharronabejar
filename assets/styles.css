@@ -1,0 +1,415 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 15px;
+}
+
+.background{
+    position: fixed;
+    background: linear-gradient(-45deg, #242424, #535353, #242424, #1b1b1b);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    width: 100%;
+    z-index: -3;
+}
+
+/*
+    Contents
+*/
+
+.home{
+    position: relative;
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+    min-width: 350px;
+    max-width: 100%;
+}
+
+.profile{
+    display: flex;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    min-width: none;
+    max-width: 800px;
+}
+
+.info{
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+.info-group{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.social-icons{
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+.img-group{
+    position: relative;
+    height: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-icons .img-group img {
+    width: 32px;
+    height: 32px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 8px;
+}
+
+.social-icons .img-group img:hover{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding-top: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
+    transition: all 200ms ease-in;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1,h3{
+    padding: 0;
+    margin: 0;
+}
+
+.pic img{
+    width: 400px;
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 83px;
+}
+
+.about{
+    height: 600px;
+    width: 100%;
+}
+
+.about-group{
+    position: relative;
+    width: 350px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.about-group h1{
+    text-align: center;
+}
+
+.about-group p{
+    text-align: justify;
+}
+
+.project{
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    min-width: 350px;
+    overflow: hidden;
+}
+
+.project-group{
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.project .title{
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.card{
+    position: absolute;
+    background-color: #303030;
+    width: 250px;
+    height: 320px;
+    padding: 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    left: -150px;
+    top: -250px;
+}
+
+.card:nth-child(1){
+    
+    z-index: 1;
+}
+
+.card:nth-child(2){
+    
+    z-index: 2;
+}
+
+.card:nth-child(3){
+    z-index: 3;
+}
+
+.card-header img{
+    width: 70px;
+    height: 70px;
+}
+
+.card-header{
+    display: flex;
+}
+
+.card-header h2{
+    width: 100%;
+    text-align: center;
+}
+
+.card-content{
+    padding: 10px;
+}
+
+.card-content p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.project-buttons{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.project-buttons button{
+    position: relative;
+    text-decoration: underline;
+    font-size: 25;
+    color: white;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.project-pic{
+    position: relative;
+    width: 100px;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: all 250ms ease-in;
+    z-index: 0;
+}
+
+.pic1-activate{
+    position: relative;
+    width: 150px;
+    left: 450px;
+    top: -50px;
+    opacity: 1;
+    transform: rotate(15deg);
+    transition: all 350ms ease-in;
+    z-index: 5;
+}
+
+.pic2-activate{
+    position: relative;
+    width: 150px;
+    left: -450px;
+    top: 50px;
+    opacity: 1;
+    transform: rotate(-15deg);
+    transition: all 350ms ease-in;
+    z-index: 5;
+}
+
+
+.project-buttons button:hover{
+    cursor: pointer;
+    border-bottom: 5px solid white;
+    transition: all 250ms ease-in;
+}
+
+.left{
+    margin-right: 50px;
+}
+
+.right{
+    margin-left: 50px;
+}
+
+
+/*
+    Utilities
+*/
+.non-select{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.tenDegRev{
+    transform: rotate(-10deg);
+    transition: all 300ms ease-in;
+    z-index: 1;
+}
+
+.tenDeg{
+    transform: rotate(10deg);
+    transition: all 300ms ease-in;
+    z-index: 1;
+}
+
+.zeroDeg{
+    transform: rotate(0deg);
+    transition: all 300ms ease-in;
+    z-index: 2;
+}
+
+.zeroDegNoAnim{
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+
+.hide{
+    opacity: 0;
+    transition: all 300ms ease-in;
+}
+
+.hideRight{
+    opacity: 0.5;
+    transition: all 300ms ease-in;
+    transform: translateX(80px);
+}
+
+.hideLeft{
+    opacity: 0;
+    transition: all 300ms ease-in;
+    transform: translateX(-80px);
+}
+
+.show{
+    opacity: 1;
+    transition: all 300ms ease-in;
+}
+
+.showLeft{
+    opacity: 1;
+    transition: all 300ms ease-in;
+    transform: translateX(-150px);
+}
+
+/* mobile
+*/
+
+@media(max-width:700px) {
+    .profile{
+        display: block;
+        height: 100vh;
+    }
+
+    .info{
+        position: relative;
+        display: block;
+        width:100%;
+    }
+
+    .pic img{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        left: 50%;
+        top:-120px;
+        transform: translateX(-50%);
+    }
+
+    .about{
+        position: relative;
+        width: 100%;
+    }
+
+
+    .pic{
+        width: 100%;
+    }
+
+    .project{
+        position: relative;
+        width: 100%;
+    }
+
+    .about-group p{
+        padding: 20px;
+    }
+
+    .card{
+        position: absolute;
+        background-color: #303030;
+        width: 250px;
+        height: 320px;
+        padding: 30px;
+        border-radius: 30px;
+        border: 2px solid white;
+        left: -157px;
+        top: -250px;
+    }
+
+    .card-content{
+        padding: 0px;
+    }
+
+    .card-content p{
+        font-size: 14px;
+    }
+
+
+    .left{
+        margin-right: 25px;
+    }
+    
+    .right{
+        margin-left: 25px;
+    }
+
+    .pic1-activate{
+        opacity: 0;
+    }
+    
+    .pic2-activate{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

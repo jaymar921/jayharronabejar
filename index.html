@@ -1,108 +1,92 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Jayharron Mar Abejar</title>
-        <link rel="stylesheet" href="./assets/design.css">
-        <link rel="shortcut icon" href="./assets/favicon.png">
-        <script src="https://kit.fontawesome.com/55a8472328.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jayharron's Portfolio">
+        <meta name="keywords" content="Jayharron, Portfolio, Abejar">
+        <meta name="author" content="Jayharron Mar Abejar">
+        <link rel="stylesheet" type="text/css" href="assets/styles.css">
+        <script defer src="assets/script.js"></script>
+        <link rel="icon" href="assets/images/jay-favicon.ico" type="image/ico">
+        <title>Jayharron Abejar</title>
     </head>
     <body>
-
-        <div class="view stick" style="background-image: url('./assets/images/bg.jpg'); background-repeat: no-repeat; background-size: cover; z-index: 0;">
-            
-            
-        </div>
-
-        <div class="view gradient-dark-toBottom ">
-            <div class="card pad-15 round-20 center dotted darken-bg w-350-r transition hide-on-pre-load fade-in-fast">
-                <h1 class="card-title  anim-right delay-50">Jayharron Mar Abejar</h1>
-                <h3 class="card-subtitle anim-right delay-50">Full-Stack Developer</h3>
-                <div class="anim-late delay-0" style="height: 52px; position:relative; width: 50%;">
-                    <img class="zero-margin entity-character entity-move flip delay-100 position-100" src="./assets/images/chibi_char.png">
-                </div>
-                <hr class="zero-margin" >
-            </div>
-            <div class="floating center top-600 animate-flicker hide-on-pre-load">Scroll for adventure<img src="./assets/utils/arrow-down-solid.png" style="width: 16px; margin-left: 5px;"/> </div>
-        </div>
-
-        <div class="view dark-bg" style="z-index: 1;">
-            <div class="card card-section pad-15 round-20 center dotted darken-bg w-850-r animate-wrapper">
-
-                <div class="transition " style="margin: auto">
-                    <h1 class="card-title animate-right delay-100">About Me</h1>
-                    <div class="w-500-r">
-                        <p class="card-paragraph left">
-                            Hi, I'm Jayharron Mar Abejar, a Filipino programmer which is I dreamed to fulfill my achievements, I am a type of person that is willing to collaborate in a small to large group to grow and also I am a competitive type of programmer.
-                        
-                            My skills does not just limit in developing a software, I also has a skill in electronics and I love to do DIY stuff at my home.
-                        
-                            As an Information Technology (IT) professional, I aim to provide a better solution using technology. I have experience in the development of web applications using Flask and ASP.NET frameworks with MySQL database. I am capable of building applications with Java, Python, and C# programming languages.
-                        </p>
+        <div class="background"></div>
+        <div class="home non-select">
+            <div class="profile">
+                <div class="info">
+                    <div class="info-group">
+                        <div class="title">
+                            <h1>Jayharron Mar Abejar</h1>
+                            <h3>FullStack Developer</h3>
+                        </div>
+                        <div class="social-icons">
+                            <div class="img-group">
+                                <img onclick="SocialLinkClicked(1)" src="assets/images/github.png">
+                                <img onclick="SocialLinkClicked(2)" src="assets/images/linkedin.png">
+                                <img onclick="SocialLinkClicked(3)" src="assets/images/spigot-og.png">
+                                <img onclick="SocialLinkClicked(4)" src="assets/images/youtube.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div style="margin: auto" >
-                    <img class="card-img border-circle" src="./assets/images/me.jpg">
-                    <h1 class="card-title">Jayharron Mar Abejar</h1>
-                    <h3 class="card-subtitle">Full-Stack Developer</h3>
+                <div class="pic">
+                    <img src="assets/images/jay.png">
                 </div>
             </div>
         </div>
-
-        <div class="view gradient-dark-toTop" style="z-index: 1;">
-
-            <div class="floating card-modal pad-15 round-20 dotted top-350 w-500-r darken-bg center-horizontal animate-wrapper">
-                <h1 class="card-title animate-right delay-100" style="text-align: center;">My best projects!</h1>
-                <h3 class="card-subtitle" style="text-align: center;">Top 3 projects</h3>
+        <div class="about non-select">
+            <div class="about-group">
+                <h1>About</h1>
+                <p>
+                Hi, I'm Jayharron Mar Abejar, a Filipino programmer which is I dreamed to fulfill my achievements, I am a type of person that is willing to collaborate in a small to large group to grow and also I am a competitive type of programmer.
+                <br><br>
+                My skills does not just limit in developing a software, I also has a skill in electronics and I love to do DIY stuff at my home.
+                <br><br>
+                As an Information Technology literate, I aim to provide a better solution using technology. I have experience in the back-end development with Flask framework for web applications with MySQL database. I mainly used Java on my freelance projects. I am capable of building applications with Java, Python, and C# programming languages. 
+                </p>
             </div>
-
-            <img class="zero-margin floating top-500 center-horizontal" loading="lazy" src="./assets/images/chibi_girl.png.png" style="width: 64px; height: auto; padding: 10px;">
         </div>
-        
-        <div class="view" style="z-index: 1;">
-
-            <div class="floating card-modal pad-15 round-20 dotted top-300 left-250 w-500-r darken-bg animate-wrapper">
-                <div class="card-section">
-                    <img src="./assets/images/ce3.png" style="width: 64px; height: 64px; padding: 10px;">
-                    <h1 class="card-title animate-right delay-100">Minecraft Plugin</h1>
+        <div class="project non-select">
+            <div class="title"><h1>Projects</h1></div>
+            <div id="project-group" class="project-group">
+                <div id="mc" class="card tenDeg">
+                    <div class="card-header">
+                        <img src="assets/images/ce3.png">
+                        <h2>Minecraft Plugin</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>One of my successful achievement was creating a plugin called 'Custom Enchantments', it was just 'for fun' for me as Covid locked us down for two years. I decided to sell my plugin and a lot of people liked and bought it, Custom Enchantments is one of my 7 developed plugins during my college life. To know more about this project, check it out <a href="https://jaymar921.github.io/jaymar_plugin_wiki/custom_enchantments_3" target="_blank">here</a>.</p>
+                    </div>
                 </div>
-                <p class="card-paragraph">One of my successful achievement was creating a plugin called 'Custom Enchantments', it was just 'for fun' for me as Covid locked us down for two years. I decided to sell my plugin and a lot of people liked and bought it, Custom Enchantments is one of my 7 developed plugins during my college life. To know more about this project, check it out <a href="https://jaymar921.github.io/jaymar_plugin_wiki/custom_enchantments_3">here</a>.</p>
-            </div>
-
-            
-            
-        </div>
-
-        <div class="view" style="z-index: 1;">
-            <div class="floating card-modal pad-15 round-20 dotted top-300 right-250 w-500-r darken-bg animate-wrapper">
-                <div class="card-section">
-                    <img src="./assets/images/ayus.jpg" style="width: 64px; height: 64px; padding: 10px;">
-                    <h1 class="card-title animate-right delay-100">AYUS - Capstone Project</h1>
+                <div id="ayus" class="card tenDegRev">
+                    <div class="card-header">
+                        <img src="assets/images/ayus icon.png">
+                        <h2>AYUS - Capstone Project</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>Our startup idea serves as an intermediary that connects vehicle owners and/or drivers to mechanics. The vehicle owner and/or driver chooses what vehicular problem they are experiencing and connects to a registered mechanic. With the help of GPS, it gets the location of the vehicle owner and/or driver that needs assistance. This startup idea will provide immediate assistance...</p>
+                    </div>
                 </div>
-                <p class="card-paragraph">Our startup idea serves as an intermediary that connects vehicle owners and/or drivers to mechanics. The vehicle owner and/or driver chooses what vehicular problem they are experiencing and connects to a registered mechanic. With the help of GPS, it gets the location of the vehicle owner and/or driver that needs assistance. This startup idea will provide immediate assistance, unlike calling for a friend/family which may take a while depending on the availability of the person. With this startup idea, it will reduce the waiting time and minimize the traffic congestion caused by the vehicular problem. The difference between it and the existing application is that the service provider is not centralized. Any qualified mechanic can apply to provide service.</p>
-            </div>
-
-        </div>
-
-        <div class="view" style="z-index: 1;">
-
-            <div class="floating card-modal pad-15 round-20 dotted top-300 left-250 w-500-r darken-bg animate-wrapper">
-                <div class="card-section">
-                    <img src="./assets/images/PSITS_LOGO.png" style="width: 64px; height: 64px; padding: 10px;">
-                    <h1 class="card-title animate-right delay-100">PSITS - Web Application</h1>
+                <div id="psits" class="card zeroDeg">
+                    <div class="card-header">
+                        <img src="assets/images/PSITS_LOGO.png">
+                        <h2>PSITS Web Application</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>PSITS Web Application which is a project that took me a week to build. Implemented database to store data and Email API to notify students with upcoming events such the ICT Congress and Acquaintance party. I built the project alone and used Python (Flask Microweb framework) for the project and it was hosted at the university server for A.Y. 2022-2023. More info <a href="https://github.com/jaymar921/PSITSWebApp" target="_blank">here</a>.</p>
+                    </div>
                 </div>
-                <p class="card-paragraph">PSITS Web Application which is a project that took me a week to build. Implemented database to store data and Email API to notify students with upcoming events such the ICT Congress and Acquaintance party. I built the project alone and used Python (Flask Microweb framework) for the project and it was hosted at the university server for A.Y. 2022-2023. More info <a href="https://github.com/jaymar921/PSITSWebApp">here</a>.</p>
             </div>
-
+            <div class="project-group">
+                <img id="project-img1" class="pic1-activate" src="assets/images/psits_1.png">
+                <img id="project-img2" class="pic2-activate" src="assets/images/psits_2.png">
+            </div>
+            <div class="project-buttons">
+                <button onclick="backCard()" class="left">Back</button>
+                <button onclick="nextCard()" class="right">Next</button>
+            </div>
         </div>
-
-        <div class="view gradient-dark-toBottom" style="z-index: 1;">
-
-            
-        </div>
-    
-    
-        <script src="./assets/portfolio.js" type="module"></script>
     </body>
 </html>
