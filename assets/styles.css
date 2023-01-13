@@ -5,6 +5,10 @@ body{
     color: white;
     font-size: 15px;
 }
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+    content:url('images/ayus_1.png') url('images/ayus_2.png') url('images/mc_1.png') url('images/mc_2.png'); 
+}
 
 body{
     background: linear-gradient(90deg, #eee 1%, transparent 1%) 1px 0, #fff;
