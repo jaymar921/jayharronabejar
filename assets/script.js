@@ -114,7 +114,7 @@ function setProjectImg(src){
     img1.classList.add('project-pic');
     img2.classList.add('project-pic');
 
-    
+    document.getElementById('project-view').scrollIntoView({ block: 'start',  behavior: 'smooth' });
 
     setTimeout(()=>{
         img1.src = `assets/images/${src}_1.png`;
@@ -124,4 +124,8 @@ function setProjectImg(src){
     },250);
 }
 
+
+window.addEventListener("scroll", ()=>{
+    document.getElementById('mountain-bg').style.top = `${0 - document.documentElement.scrollTop/20}px`;
+});
 
