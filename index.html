@@ -12,7 +12,9 @@
         <title>Jayharron Abejar</title>
     </head>
     <body>
-        <div class="background"></div>
+        <div id="mountain-bg" class="mountain">
+            <div class="background"></div>
+        </div>
         <div class="home non-select">
             <div class="profile">
                 <div class="info">
@@ -49,7 +51,7 @@
             </div>
         </div>
         <div class="project non-select">
-            <div class="title"><h1>Projects</h1></div>
+            <div id="project-view" class="title"><h1>Projects</h1></div>
             <div id="project-group" class="project-group">
                 <div id="mc" class="card tenDeg">
                     <div class="card-header">
@@ -57,7 +59,7 @@
                         <h2>Minecraft Plugin</h2>
                     </div>
                     <div class="card-content">
-                        <p>One of my successful achievement was creating a plugin called 'Custom Enchantments', it was just 'for fun' for me as Covid locked us down for two years. I decided to sell my plugin and a lot of people liked and bought it, Custom Enchantments is one of my 7 developed plugins during my college life. To know more about this project, check it out <a href="https://jaymar921.github.io/jaymar_plugin_wiki/custom_enchantments_3" target="_blank">here</a>.</p>
+                        <p>One of my successful achievement was creating a plugin called 'Custom Enchantments', it was just 'for fun' for me as Covid locked us down for two years. I decided to sell my plugin and a lot of people liked and bought it, Custom Enchantments is one of my 7 developed plugins during my college life. To know more about this project, check it out <a class="selectable" href="https://jaymar921.github.io/jaymar_plugin_wiki/custom_enchantments_3" target="_blank">here</a>.</p>
                     </div>
                 </div>
                 <div id="ayus" class="card tenDegRev">
@@ -75,7 +77,7 @@
                         <h2>PSITS Web Application</h2>
                     </div>
                     <div class="card-content">
-                        <p>PSITS Web Application which is a project that took me a week to build. Implemented database to store data and Email API to notify students with upcoming events such the ICT Congress and Acquaintance party. I built the project alone and used Python (Flask Microweb framework) for the project and it was hosted at the university server for A.Y. 2022-2023. More info <a href="https://github.com/jaymar921/PSITSWebApp" target="_blank">here</a>.</p>
+                        <p>PSITS Web Application which is a project that took me a week to build. Implemented database to store data and Email API to notify students with upcoming events such the ICT Congress and Acquaintance party. I built the project alone and used Python (Flask Microweb framework) for the project and it was hosted at the university server for A.Y. 2022-2023. More info <a class="selectable" href="https://github.com/jaymar921/PSITSWebApp" target="_blank">here</a>.</p>
                     </div>
                 </div>
             </div>
@@ -86,6 +88,25 @@
             <div class="project-buttons">
                 <button onclick="backCard()" class="left">Back</button>
                 <button onclick="nextCard()" class="right">Next</button>
+            </div>
+        </div>
+        <div class="work-history">
+            <h1>Work History</h1>
+            <div class="center-group">
+                <div class="work">
+                    <img src="assets/images/fullScale.png">
+                    <div class="work-description">
+                        <h3>FullScale Gigabook inc.</h3>
+                        <p>14F HM Tower, Cebu IT Park, Philippines<br>C# Developer Intern<br>September 6, 2022 - January 16, 2023</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/spigot-og.png">
+                    <div class="work-description">
+                        <h3>SpigotMC.org</h3>
+                        <p>SpigotMC Software Project Community<br>Freelancing Plugin Developer (Java)<br>September 10, 2020 - present</p>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
