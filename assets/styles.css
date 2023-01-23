@@ -408,6 +408,14 @@ body{
     box-shadow: 5px 5px 5px black;
 }
 
+.hide_mobile{
+    display: block;
+}
+
+.show_mobile{
+    display: none;
+}
+
 /* mobile
 */
 
@@ -511,6 +519,13 @@ body{
     .logos img{
         width: 98px;
         height: 98px;
+    }
+
+    .hide_mobile{
+        display: none;
+    }
+    .show_mobile{
+        display: block;
     }
     
 }
