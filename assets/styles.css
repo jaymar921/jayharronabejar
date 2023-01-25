@@ -506,9 +506,11 @@ body{
 
     .work{
         display: block;
+        width: 100%;
     }
 
     .work-description h3, p{
+        padding: 0;
         text-align: center;
     }
 
