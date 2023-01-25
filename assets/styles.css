@@ -219,7 +219,7 @@ body{
 .project-buttons{
     position: absolute;
     left: 50%;
-    top: 85%;
+    top: 90%;
     transform: translateX(-50%);
     overflow: hidden;
 }
@@ -227,7 +227,7 @@ body{
 .project-buttons button{
     position: relative;
     text-decoration: underline;
-    font-size: 25;
+    font-size: 25px;
     color: white;
     border: 0;
     background-color: rgba(255, 255, 255, 0.0);
@@ -258,7 +258,7 @@ body{
     position: relative;
     width: 150px;
     left: -450px;
-    top: 50px;
+    top: -50px;
     opacity: 1;
     transform: rotate(-15deg);
     transition: all 350ms ease-in;
