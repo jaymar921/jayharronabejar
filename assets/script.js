@@ -16,6 +16,9 @@ function SocialLinkClicked(option){
         case 4:
             window.open("https://www.youtube.com/@jaymar921");
             break;
+        case 5:
+            window.open("https://www.instagram.com/jerron_mar/");
+            break;
     }
 }
 
@@ -126,6 +129,6 @@ function setProjectImg(src){
 
 
 window.addEventListener("scroll", ()=>{
-    document.getElementById('mountain-bg').style.top = `${0 - document.documentElement.scrollTop/20}px`;
+    document.getElementById('mountain-bg').style.top = `${0 - document.documentElement.scrollTop/50}px`;
 });
 

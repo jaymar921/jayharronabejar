@@ -29,7 +29,7 @@ body{
 .mountain{
     position: fixed;
     background-image: url("images/mountain.jpg");
-    height: calc(100vh + 200px);
+    height: calc(100vh + 300px);
     width: 100%;
     top: 0px;
     background-repeat: no-repeat;
