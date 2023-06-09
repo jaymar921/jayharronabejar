@@ -1,4 +1,4 @@
-const api_url = 'http://192.53.114.221:9500';
+const api_url = 'https://192.53.114.221:9500';
 const RetrieveAllEvents = () => {
     const rows = document.getElementById('repository-rows');
     fetch(api_url+'/Repository/JayMar921')
