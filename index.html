@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="assets/styles.css">
         <script defer src="assets/script.js"></script>
         <link rel="icon" href="assets/images/jay-favicon.ico" type="image/ico">
+        <script src="https://kit.fontawesome.com/55a8472328.js" crossorigin="anonymous"></script>
         <title>Jayharron Abejar</title>
     </head>
     <body>
@@ -33,7 +34,8 @@
                                 <img onclick="SocialLinkClicked(2)" src="assets/images/linkedin.png">
                                 <img onclick="SocialLinkClicked(3)" src="assets/images/spigot-og.png">
                                 <img onclick="SocialLinkClicked(4)" src="assets/images/youtube.png">
-                                <img onclick="SocialLinkClicked(5)" src="assets/images/camera.png">
+                                <img onclick="SocialLinkClicked(5)" src="assets/images/ig.png">
+                                <img onclick="SocialLinkClicked(6)" src="assets/images/camera.png">
                             </div>
                         </div>
                     </div>
@@ -107,8 +109,23 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <h1 class="animate-last delay-50">Certifications</h1>
+            <div class="center-group">
+                <div class="work">
+                    <img src="https://th.bing.com/th?id=ODL.7f1f02286bb44f690b72f3b773b9323a&w=100&h=100&c=12&pcl=faf9f7&o=6&pid=13.1">
+                    <div class="work-description">
+                        <h3>PhilNITS IP Exam 2023</h3>
+                        <p>PhilNITS: JITSE IT-PASSPORT EXAM<br>Examinee Certificate #: <a style="color: greenyellow; font-weight: 900;" href="http://philnits.org/passers_IP2023.html">IP2400051</a><br>Examination Date: April 2023</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
         <div class="project non-select">
-            <div id="project-view" class="title"><h1>Projects</h1></div>
+            <div id="project-view" class="title"><h1>Top Projects</h1></div>
             <div id="project-group" class="project-group">
                 <div id="mc" class="card tenDeg">
                     <div class="card-header">
@@ -166,20 +183,73 @@
             <br>
         </div>
         <div class="container">
-            <h1 class="animate-last delay-50">Certifications</h1>
-            <div class="center-group">
-                <div class="work">
-                    <img src="https://th.bing.com/th?id=ODL.7f1f02286bb44f690b72f3b773b9323a&w=100&h=100&c=12&pcl=faf9f7&o=6&pid=13.1">
-                    <div class="work-description">
-                        <h3>PhilNITS IP Exam 2023</h3>
-                        <p>PhilNITS: JITSE IT-PASSPORT EXAM<br>Examinee Certificate #: <a style="color: greenyellow; font-weight: 900;" href="http://philnits.org/passers_IP2023.html">IP2400051</a><br>Examination Date: April 2023</p>
-                    </div>
-                </div>
+            <h1>All Projects</h1>
+            <div class="v1-card-container" id="projects-card">
             </div>
-            <br>
-            <br>
-            <br>
         </div>
         <script src="assets/portfolio.js" type="module"></script>
+        <script>
+            function getAllProjects(){
+                fetch('https://api.github.com/users/jaymar921/repos')
+                .then(response => response.json())
+                .then(data => {
+                    const projectElement = document.getElementById('projects-card');
+                    data.forEach(element => {
+                        
+                        let card = document.createElement('div');
+                        card.classList.add('v1-card');
+                        card.onclick = function(){
+                            window.open(element.html_url, '_blank');
+                        }
+
+                        let title = document.createElement('h3');
+                        title.innerText = element.name;
+
+                        let description = document.createElement('p');
+                        description.classList.add('description');
+                        description.innerText = element.description;
+
+                        let language = document.createElement('h2');
+                        language.innerText = element.language!=null?element.language:'-';
+
+                        let flex = document.createElement('div');
+                        flex.classList.add('v1-card-flex');
+
+                        let star = document.createElement('h4');
+                        star.innerHTML = '<i class="fa-solid fa-star" style="color: yellow;"></i> ' + element.stargazers_count;
+
+                        let eye = document.createElement('h4');
+                        eye.innerHTML = '<i class="fa-solid fa-eye" style="color: #424242;"></i> ' + element.watchers_count;
+
+                        let topics = document.createElement('p');
+                        topics.classList.add('topics');
+
+                        let book = document.createElement('i');
+                        book.classList.add('fa-solid', 'fa-book');
+
+                        let topic = '';
+
+                        element.topics.forEach(element => {
+                            topic += element + ', ';
+                        });
+                        topics.innerHTML = '<i class="fa-solid fa-book"></i> ' + topic;
+
+                        flex.appendChild(star);
+                        flex.appendChild(eye);
+                        card.appendChild(flex);
+                        card.appendChild(language);
+                        
+                        card.appendChild(topics);
+                        card.appendChild(title);
+                        
+                        card.appendChild(description);
+                        
+
+                        projectElement.appendChild(card);
+                    });
+                })
+            };
+            getAllProjects()
+        </script>
     </body>
 </html>

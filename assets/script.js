@@ -19,6 +19,9 @@ function SocialLinkClicked(option){
         case 5:
             window.open("https://www.instagram.com/jerron_mar/");
             break;
+        case 6:
+            window.open("./photography/index.html");
+            break;
     }
 }
 
