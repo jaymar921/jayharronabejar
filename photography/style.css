@@ -1,4 +1,105 @@
+:root{
+    --backgroundImage1 : url(./images/bg-1.jpg);
+}
 body{
     background-color: black;
     margin: 0;
 }
+
+.bg-1{
+    background-image: var(--backgroundImage1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.v-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    color: white;
+    text-align: left;
+}
+
+
+.info h1{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.info p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 0;
+    padding: 15px 0 10px 0;
+}
+
+.info button{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.floating-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.mdfy-col{
+    padding: 10px;
+}
+
+.mdfy-card{
+    width: 18rem; background-color: rgb(240, 240, 240); color: rgb(0, 0, 0); border: 1px solid white;
+}
+
+@media (max-width: 768px){
+    .info{
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .info h1{
+        font-size: 2rem;
+    }
+
+    .info p{
+        font-size: 1rem;
+    }
+
+    .info button{
+        font-size: 0.8rem;
+    }
+}
+    
