@@ -116,7 +116,7 @@
                     <img src="https://th.bing.com/th?id=ODL.7f1f02286bb44f690b72f3b773b9323a&w=100&h=100&c=12&pcl=faf9f7&o=6&pid=13.1">
                     <div class="work-description">
                         <h3>PhilNITS IP Exam 2023</h3>
-                        <p>PhilNITS: JITSE IT-PASSPORT EXAM<br>Examinee Certificate #: <a style="color: greenyellow; font-weight: 900;" href="http://philnits.org/passers_IP2023.html">IP2400051</a><br>Examination Date: April 2023</p>
+                        <p>PhilNITS: JITSE IT-PASSPORT EXAM<br>Examinee Certificate #: <a style="color: greenyellow; font-weight: 900;" href="http://philnits.org/passers_IP2023.html#:~:text=IP2400051,jayharron%20mar%20canillo" target="_blank">IP2400051</a><br>Examination Date: April 2023</p>
                     </div>
                 </div>
             </div>
@@ -210,7 +210,7 @@
                         description.innerText = element.description;
 
                         let language = document.createElement('h2');
-                        language.innerText = element.language!=null?element.language:'-';
+                        language.innerText = element.language!=null?element.language:'ㅤ';
 
                         let flex = document.createElement('div');
                         flex.classList.add('v1-card-flex');
@@ -233,6 +233,10 @@
                             topic += element + ', ';
                         });
                         topics.innerHTML = '<i class="fa-solid fa-book"></i> ' + topic;
+
+                        if(element.topics.length === 0){
+                            topics.innerHTML = 'ㅤ';
+                        }
 
                         flex.appendChild(star);
                         flex.appendChild(eye);
