@@ -29,6 +29,7 @@ body{
     height: 100%;
     min-height: 100vh;
     overflow: hidden;
+    z-index: 1;
 }
 
 .info{
@@ -82,6 +83,23 @@ body{
 .mdfy-card{
     width: 18rem; background-color: rgb(240, 240, 240); color: rgb(0, 0, 0); border: 1px solid white;
 }
+
+.hidden{
+    z-index: -20;
+    display: none;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+}   
 
 @media (max-width: 768px){
     .info{

@@ -12,6 +12,13 @@
     <title>JayMar921 Photography</title>
 </head>
 <body>
+    <div id="image-view-modal" class="modal-container hidden">
+        <button class="btn btn-primary" onclick="closeModal()" id="closeModal" style="position: fixed;z-index: 99;">Close</button>
+        <br><br>
+        <div class="row" id="images" style="position: relative; overflow: hidden;">
+            
+        </div>
+    </div>
     <div id="top" class="v-container bg-1">
         <div class="info">
             <h1>Jayharron Mar Abejar</h1>
@@ -25,7 +32,9 @@
     <div id="events" class="v-container">
         <h1 class="text-center" style="color:white; padding: 20px;">Events</h1>
         <div class="container">
-            <div class="row">
+            <div class="row" id="repository-rows">
+                <!-- Place holder only
+
                 <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mdfy-col">
                     <div class="card mdfy-card">
                         <img class="card-img-top" src="./images/events/of-2023.jpg" alt="Card image cap">
@@ -37,11 +46,14 @@
                         </div>
                     </div>
                 </div>
+                -->
             </div>
         </div>
+        
         <div class="floating-footer">
             <a href="#top" style="color: white; text-decoration: none;"><i class="fa-solid fa-arrow-up"></i> Go back up</a>
         </div>
     </div>
+    <script src="phjs.js"></script>
 </body>
 </html>

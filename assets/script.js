@@ -20,7 +20,7 @@ function SocialLinkClicked(option){
             window.open("https://www.instagram.com/jerron_mar/");
             break;
         case 6:
-            window.open("./photography/");
+            location.href = './photography/';
             break;
     }
 }
