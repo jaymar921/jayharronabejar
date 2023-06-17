@@ -1,6 +1,6 @@
 :root{
     --backgroundImage1 : url(./images/bg-1.jpg);
-    --backgroundImage2 : url(./images/bg-2.jpg);
+    --backgroundImage2 : url(./images/bg-2.JPG);
 }
 body{
     background-color: black;
