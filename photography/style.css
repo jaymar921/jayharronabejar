@@ -111,6 +111,20 @@ body{
     background-color: rgba(0, 0, 0, 0.8);
 }   
 
+
+
+.not-visible{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 1px solid black;
+}
+
+.not-visible img{
+    width: 1px;
+    height: 1px;
+}
+
 @media (max-width: 768px){
     .info{
         width: 100%;
