@@ -1,4 +1,4 @@
-const api_url = 'https://192.53.114.221:9500';
+const api_url = '---';
 const RetrieveAllEvents = () => {
     const rows = document.getElementById('repository-rows');
     fetch(api_url+'/Repository/JayMar921')
@@ -91,7 +91,7 @@ const imgGen = function*(arr){
 }
 
 const loadMoreImages = async (imgGen, imagesDiv, repository) => {
-    for(let i = 0; i < 25; i++){
+    for(let i = 0; i < 3; i++){
         const imgName = imgGen.next().value;
 
         if(imgName !== undefined){

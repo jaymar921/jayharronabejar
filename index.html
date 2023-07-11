@@ -189,6 +189,25 @@
         </div>
         <script src="assets/portfolio.js" type="module"></script>
         <script>
+            // source = https://www.michalspacek.cz/zmena-url-a-skryvani-fbclid-pomoci-javascriptu
+            (function() {
+                var param = 'fbclid';
+                if (location.search.indexOf(param + '=') !== -1) {
+                    var replace = '';
+                    try {
+                            var url = new URL(location);
+                            url.searchParams.delete(param);
+                            replace = url.href;
+                    } catch (ex) {
+                            var regExp = new RegExp('[?&]' + param + '=.*$');
+                            replace = location.search.replace(regExp, '');
+                            replace = location.pathname + replace + location.hash;
+                    }
+                    history.replaceState(null, '', replace);
+                }
+            })();
+            // ----------------
+
             function getAllProjects(){
                 fetch('https://api.github.com/users/jaymar921/repos')
                 .then(response => response.json())
@@ -253,7 +272,7 @@
                     });
                 })
             };
-            getAllProjects()
+            getAllProjects();
         </script>
     </body>
 </html>
