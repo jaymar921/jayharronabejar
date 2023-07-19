@@ -213,7 +213,11 @@
                 .then(response => response.json())
                 .then(data => {
                     const projectElement = document.getElementById('projects-card');
+                    let num = 1;
                     data.forEach(element => {
+
+                        if(num++ >= 20)
+                            return;
                         
                         let card = document.createElement('div');
                         card.classList.add('v1-card');
