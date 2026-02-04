@@ -1,282 +1,408 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Jayharron's Portfolio">
-        <meta name="keywords" content="Jayharron, Portfolio, Abejar">
-        <meta name="author" content="Jayharron Mar Abejar">
-        <link rel="stylesheet" type="text/css" href="assets/styles.css">
-        <script defer src="assets/script.js"></script>
-        <link rel="icon" href="assets/images/jay-favicon.ico" type="image/ico">
-        <script src="https://kit.fontawesome.com/55a8472328.js" crossorigin="anonymous"></script>
-        <title>Jayharron Abejar</title>
-    </head>
-    <body>
-        <img style="display: none;" src="assets/images/intro.png">
-        <div id="mountain-bg" class="mountain">
-            <div class="background"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jayharron's Portfolio" />
+    <meta name="keywords" content="Jayharron, Portfolio, Abejar" />
+    <meta name="author" content="Jayharron Mar Abejar" />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <script defer src="assets/script.js"></script>
+    <link rel="icon" href="assets/images/jay-favicon.ico" type="image/ico" />
+    <script
+      src="https://kit.fontawesome.com/55a8472328.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Jayharron Abejar</title>
+  </head>
+  <body>
+    <img style="display: none" src="assets/images/intro.png" />
+    <div id="mountain-bg" class="mountain">
+      <div class="background"></div>
+    </div>
+    <div class="home non-select">
+      <div class="profile">
+        <div class="pic hide_mobile">
+          <img src="assets/images/jay.png" />
         </div>
-        <div class="home non-select">
-            <div class="profile">
-                <div class="pic hide_mobile">
-                    <img src="assets/images/jay.png">
-                </div>
-                <div class="info">
-                    <div class="info-group">
-                        <div class="title">
-                            <h1 style="font-weight: 900;font-family: 'Poppins', sans-serif;">Jayharron Mar Abejar</h1>
-                            <h3 style="color: gray;font-weight: 900;font-family: 'Poppins', sans-serif;">Full-Stack Developer</h3>
-                        </div>
-                        <div class="social-icons">
-                            <div class="img-group">
-                                <img onclick="SocialLinkClicked(1)" src="assets/images/github.png">
-                                <img onclick="SocialLinkClicked(2)" src="assets/images/linkedin.png">
-                                <img onclick="SocialLinkClicked(3)" src="assets/images/spigot-og.png">
-                                <img onclick="SocialLinkClicked(4)" src="assets/images/youtube.png">
-                                <img onclick="SocialLinkClicked(5)" src="assets/images/ig.png">
-                                <img onclick="SocialLinkClicked(6)" src="assets/images/camera.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pic show_mobile">
-                    <img src="assets/images/jay.png">
-                </div>
+        <div class="info">
+          <div class="info-group">
+            <div class="title">
+              <h1
+                style="
+                  font-weight: 900;
+                  font-family: &quot;Poppins&quot;, sans-serif;
+                "
+              >
+                Jayharron Mar Abejar
+              </h1>
+              <h3
+                style="
+                  color: gray;
+                  font-weight: 900;
+                  font-family: &quot;Poppins&quot;, sans-serif;
+                "
+              >
+                Full-Stack Developer
+              </h3>
             </div>
+            <div class="social-icons">
+              <div class="img-group">
+                <img
+                  onclick="SocialLinkClicked(1)"
+                  src="assets/images/github.png"
+                />
+                <img
+                  onclick="SocialLinkClicked(2)"
+                  src="assets/images/linkedin.png"
+                />
+                <img
+                  onclick="SocialLinkClicked(3)"
+                  src="assets/images/spigot-og.png"
+                />
+                <img
+                  onclick="SocialLinkClicked(4)"
+                  src="assets/images/youtube.png"
+                />
+                <img
+                  onclick="SocialLinkClicked(5)"
+                  src="assets/images/ig.png"
+                />
+                <img
+                  onclick="SocialLinkClicked(6)"
+                  src="assets/images/camera.png"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about non-select">
-            <div class="about-group">
-                <h1>About</h1>
-                <p>
-                Hi, I'm Jayharron Mar Abejar, a Filipino programmer which is I dreamed to fulfill my achievements, I am a type of person that is willing to collaborate in a small to large group to grow and also I am a competitive type of programmer.
-                <br><br>
-                My skills does not just limit in developing a software, I also has a skill in electronics and I love to do DIY stuff at my home.
-                <br><br>
-                As an Information Technology literate, I aim to provide a better solution using technology. I have experience in the back-end development with Flask framework for web applications with MySQL database. I mainly used Java on my freelance projects. I am capable of building applications with Java, Python, and C# programming languages. 
-                </p>
-            </div>
+        <div class="pic show_mobile">
+          <img src="assets/images/jay.png" />
         </div>
-        <div class="work-history">
-            <h1>Work History</h1>
-            <div class="center-group">
-                <div class="work animate-wrapper">
-                    <img src="assets/images/fullScale.png">
-                    <div class="work-description">
-                        <h3 class="animate-right delay-50">FullScale Gigabook inc.</h3>
-                        <p>14F HM Tower, Cebu IT Park, Philippines<br>Full-Stack Developer (C#/ASP.NET)<br>May 22, 2023 - present</p>
-                    </div>
-                </div>
-                <div class="work animate-wrapper">
-                    <img src="assets/images/PSITS_LOGO.png">
-                    <div class="work-description">
-                        <h3 class="animate-right delay-50">PSITS UC MAIN</h3>
-                        <p>University of Cebu 6000 Cebu City, Philippines<br>Full-Stack Developer (Python/Flask)<br>September 12, 2022 - May 22, 2023</p>
-                    </div>
-                </div>
-                <div class="work animate-wrapper">
-                    <img src="assets/images/fullScale.png">
-                    <div class="work-description">
-                        <h3 class="animate-right delay-50">FullScale Gigabook inc.</h3>
-                        <p>14F HM Tower, Cebu IT Park, Philippines<br>Developer Intern (C#/ASP.NET)<br>September 6, 2022 - January 16, 2023</p>
-                    </div>
-                </div>
-                <div class="work animate-wrapper">
-                    <img src="assets/images/spigot-og.png">
-                    <div class="work-description">
-                        <h3 class="animate-right delay-50">SpigotMC.org</h3>
-                        <p>SpigotMC Software Project Community<br>Freelancing Plugin Developer (Java)<br>September 10, 2020 - present</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="about non-select">
+      <div class="about-group">
+        <h1>About</h1>
+        <p>
+          Born and raised in the Philippines, I'm a Software Engineer serving
+          clients in the United States while working remotely from home. Beyond
+          tech, I'm a dedicated dividend investor with a diversified portfolio
+          spanning both local and international markets. I'm also a hands-on
+          hobbyist who enjoys DIY projects and setting up solar home systems.
+          Outside of work, I'm always up for an adventure especially if it
+          involves mountains rather than beaches.
+        </p>
+      </div>
+    </div>
+    <div class="work-history">
+      <h1>Work History</h1>
+      <div class="center-group">
+        <div class="work animate-wrapper">
+          <img src="assets/images/fullScale.png" />
+          <div class="work-description">
+            <h3 class="animate-right delay-50">FullScale Gigabook inc.</h3>
+            <p>
+              14F HM Tower, Cebu IT Park, Philippines<br />Full-Stack Developer
+              (C#/ASP.NET)<br />May 22, 2023 - present
+            </p>
+          </div>
         </div>
-        <div class="container">
-            <h1>Education</h1>
-            <div class="center-group">
-                <div class="work">
-                    <img src="assets/images/uc.png">
-                    <div class="work-description">
-                        <h3>University of Cebu - Main Campus</h3>
-                        <p>Sanciangko St. Cebu City, 6000 Philippines<br>Bachelor of Science in Information Technology<br>June 2019 - May 2023</p>
-                    </div>
-                </div>
-                <div class="work">
-                    <img style="border-radius: 50%;" src="assets/images/stscho.jfif">
-                    <div class="work-description">
-                        <h3>St. Scholastica's Academy - Tabunok</h3>
-                        <p>Tabunok, Talisay City, Cebu<br>JHS - SHS (STEM)<br>2013 - 2019</p>
-                    </div>
-                </div>
-            </div>
+        <div class="work animate-wrapper">
+          <img src="assets/images/PSITS_LOGO.png" />
+          <div class="work-description">
+            <h3 class="animate-right delay-50">PSITS UC MAIN</h3>
+            <p>
+              University of Cebu 6000 Cebu City, Philippines<br />Full-Stack
+              Developer (Python/Flask)<br />September 12, 2022 - May 22, 2023
+            </p>
+          </div>
         </div>
-        <div class="container">
-            <h1 class="animate-last delay-50">Certifications</h1>
-            <div class="center-group">
-                <div class="work">
-                    <img src="https://th.bing.com/th?id=ODL.7f1f02286bb44f690b72f3b773b9323a&w=100&h=100&c=12&pcl=faf9f7&o=6&pid=13.1">
-                    <div class="work-description">
-                        <h3>PhilNITS IP Exam 2023</h3>
-                        <p>PhilNITS: JITSE IT-PASSPORT EXAM<br>Examinee Certificate #: <a style="color: greenyellow; font-weight: 900;" href="http://philnits.org/passers_IP2023.html#:~:text=IP2400051,jayharron%20mar%20canillo" target="_blank">IP2400051</a><br>Examination Date: April 2023</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
+        <div class="work animate-wrapper">
+          <img src="assets/images/fullScale.png" />
+          <div class="work-description">
+            <h3 class="animate-right delay-50">FullScale Gigabook inc.</h3>
+            <p>
+              14F HM Tower, Cebu IT Park, Philippines<br />Developer Intern
+              (C#/ASP.NET)<br />September 6, 2022 - January 16, 2023
+            </p>
+          </div>
         </div>
-        <div class="project non-select">
-            <div id="project-view" class="title"><h1>Top Projects</h1></div>
-            <div id="project-group" class="project-group">
-                <div id="mc" class="card tenDeg">
-                    <div class="card-header">
-                        <img src="assets/images/ce3.png">
-                        <h2>Minecraft Plugin</h2>
-                    </div>
-                    <div class="card-content">
-                        <p>One of my successful achievement was creating a plugin called 'Custom Enchantments', it was just 'for fun' for me as Covid locked us down for two years. I decided to sell my plugin and a lot of people liked and bought it, Custom Enchantments is one of my 7 developed plugins during my college life. To know more about this project, check it out <a class="selectable" href="https://jaymar921.github.io/jaymar_plugin_wiki/custom_enchantments_3" target="_blank">here</a>.</p>
-                    </div>
-                </div>
-                <div id="ayus" class="card tenDegRev">
-                    <div class="card-header">
-                        <img src="assets/images/ayus icon.png">
-                        <h2>AYUS - Capstone Project</h2>
-                    </div>
-                    <div class="card-content">
-                        <p>The task of helping drivers whose cars break down on the road can be difficult for service providers, especially when there are no other vehicles around. To aid drivers, vehicle owners, and mechanics in this situation, a team of researchers is working on an online platform called AYUS. To verify the issue at hand, the researchers carried out a survey... More info <a class="selectable" href="https://github.com/jaymar921/AYUS-WebASP" target="_blank">here</a>. </p>
-                    </div>
-                </div>
-                <div id="psits" class="card zeroDeg">
-                    <div class="card-header">
-                        <img src="assets/images/PSITS_LOGO.png">
-                        <h2>PSITS Web Application</h2>
-                    </div>
-                    <div class="card-content">
-                        <p>PSITS Web Application which is a project that took me a week to build. Implemented database to store data and Email API to notify students with upcoming events such the ICT Congress and Acquaintance party. I built the project alone and used Python (Flask Microweb framework) for the project and it was hosted at the university server for A.Y. 2022-2023. More info <a class="selectable" href="https://github.com/jaymar921/PSITSWebApp" target="_blank">here</a>.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="project-group">
-                <img id="project-img1" class="pic1-activate" src="assets/images/psits_1.png">
-                <img id="project-img2" class="pic2-activate" src="assets/images/psits_2.png">
-            </div>
-            <div class="project-buttons">
-                <button onclick="backCard()" class="left"><img src="assets/images/arrow.png"></button>
-                <button onclick="nextCard()" class="right"><img src="assets/images/arrow.png"></button>
-            </div>
+        <div class="work animate-wrapper">
+          <img src="assets/images/spigot-og.png" />
+          <div class="work-description">
+            <h3 class="animate-right delay-50">SpigotMC.org</h3>
+            <p>
+              SpigotMC Software Project Community<br />Freelancing Plugin
+              Developer (Java)<br />September 10, 2020 - present
+            </p>
+          </div>
         </div>
-        <div class="container">
-            <h1>Skills</h1>
-            <br>
-            <br>
-            <br>      
-            <div class="logos">
-                <img src="assets/images/java.png">
-                <img src="assets/images/csharp.png">
-                <img src="assets/images/python.png">
-                <img src="assets/images/js.png">
-                <img src="assets/images/flask.png">
-                <img src="assets/images/asp_net.png">
-                <img src="assets/images/react.png">
-            </div>
-            <br>
-            <br>
-            <br>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Education</h1>
+      <div class="center-group">
+        <div class="work">
+          <img src="assets/images/uc.png" />
+          <div class="work-description">
+            <h3>University of Cebu - Main Campus</h3>
+            <p>
+              Sanciangko St. Cebu City, 6000 Philippines<br />Bachelor of
+              Science in Information Technology<br />June 2019 - May 2023
+            </p>
+          </div>
         </div>
-        <div class="container">
-            <h1>All Projects</h1>
-            <div class="v1-card-container" id="projects-card">
-            </div>
+        <div class="work">
+          <img style="border-radius: 50%" src="assets/images/stscho.jfif" />
+          <div class="work-description">
+            <h3>St. Scholastica's Academy - Tabunok</h3>
+            <p>
+              Tabunok, Talisay City, Cebu<br />JHS - SHS (STEM)<br />2013 - 2019
+            </p>
+          </div>
         </div>
-        <script src="assets/portfolio.js" type="module"></script>
-        <script>
-            // source = https://www.michalspacek.cz/zmena-url-a-skryvani-fbclid-pomoci-javascriptu
-            (function() {
-                var param = 'fbclid';
-                if (location.search.indexOf(param + '=') !== -1) {
-                    var replace = '';
-                    try {
-                            var url = new URL(location);
-                            url.searchParams.delete(param);
-                            replace = url.href;
-                    } catch (ex) {
-                            var regExp = new RegExp('[?&]' + param + '=.*$');
-                            replace = location.search.replace(regExp, '');
-                            replace = location.pathname + replace + location.hash;
-                    }
-                    history.replaceState(null, '', replace);
-                }
-            })();
-            // ----------------
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="animate-last delay-50">Certifications</h1>
+      <div class="center-group">
+        <div class="work">
+          <img
+            src="https://th.bing.com/th?id=ODL.7f1f02286bb44f690b72f3b773b9323a&w=100&h=100&c=12&pcl=faf9f7&o=6&pid=13.1"
+          />
+          <div class="work-description">
+            <h3>PhilNITS IP Exam 2023</h3>
+            <p>
+              PhilNITS: JITSE IT-PASSPORT EXAM<br />Examinee Certificate #:
+              <a
+                style="color: greenyellow; font-weight: 900"
+                href="http://philnits.org/passers_IP2023.html#:~:text=IP2400051,jayharron%20mar%20canillo"
+                target="_blank"
+                >IP2400051</a
+              ><br />Examination Date: April 2023
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+    <div class="project non-select">
+      <div id="project-view" class="title"><h1>Top Projects</h1></div>
+      <div id="project-group" class="project-group">
+        <div id="mc" class="card tenDeg">
+          <div class="card-header">
+            <img src="assets/images/ce3.png" />
+            <h2>Minecraft Plugin</h2>
+          </div>
+          <div class="card-content">
+            <p>
+              One of my successful achievement was creating a plugin called
+              'Custom Enchantments', it was just 'for fun' for me as Covid
+              locked us down for two years. I decided to sell my plugin and a
+              lot of people liked and bought it, Custom Enchantments is one of
+              my 7 developed plugins during my college life. To know more about
+              this project, check it out
+              <a
+                class="selectable"
+                href="https://jaymar921.github.io/jaymar_plugin_wiki/custom_enchantments_3"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
+        </div>
+        <div id="ayus" class="card tenDegRev">
+          <div class="card-header">
+            <img src="assets/images/ayus icon.png" />
+            <h2>AYUS - Capstone Project</h2>
+          </div>
+          <div class="card-content">
+            <p>
+              The task of helping drivers whose cars break down on the road can
+              be difficult for service providers, especially when there are no
+              other vehicles around. To aid drivers, vehicle owners, and
+              mechanics in this situation, a team of researchers is working on
+              an online platform called AYUS. To verify the issue at hand, the
+              researchers carried out a survey... More info
+              <a
+                class="selectable"
+                href="https://github.com/jaymar921/AYUS-WebASP"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
+        </div>
+        <div id="psits" class="card zeroDeg">
+          <div class="card-header">
+            <img src="assets/images/PSITS_LOGO.png" />
+            <h2>PSITS Web Application</h2>
+          </div>
+          <div class="card-content">
+            <p>
+              PSITS Web Application which is a project that took me a week to
+              build. Implemented database to store data and Email API to notify
+              students with upcoming events such the ICT Congress and
+              Acquaintance party. I built the project alone and used Python
+              (Flask Microweb framework) for the project and it was hosted at
+              the university server for A.Y. 2022-2023. More info
+              <a
+                class="selectable"
+                href="https://github.com/jaymar921/PSITSWebApp"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-group">
+        <img
+          id="project-img1"
+          class="pic1-activate"
+          src="assets/images/psits_1.png"
+        />
+        <img
+          id="project-img2"
+          class="pic2-activate"
+          src="assets/images/psits_2.png"
+        />
+      </div>
+      <div class="project-buttons">
+        <button onclick="backCard()" class="left">
+          <img src="assets/images/arrow.png" />
+        </button>
+        <button onclick="nextCard()" class="right">
+          <img src="assets/images/arrow.png" />
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Skills</h1>
+      <br />
+      <br />
+      <br />
+      <div class="logos">
+        <img src="assets/images/java.png" />
+        <img src="assets/images/csharp.png" />
+        <img src="assets/images/python.png" />
+        <img src="assets/images/js.png" />
+        <img src="assets/images/flask.png" />
+        <img src="assets/images/asp_net.png" />
+        <img src="assets/images/react.png" />
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+    <div class="container">
+      <h1>All Projects</h1>
+      <div class="v1-card-container" id="projects-card"></div>
+    </div>
+    <script src="assets/portfolio.js" type="module"></script>
+    <script>
+      // source = https://www.michalspacek.cz/zmena-url-a-skryvani-fbclid-pomoci-javascriptu
+      (function () {
+        var param = "fbclid";
+        if (location.search.indexOf(param + "=") !== -1) {
+          var replace = "";
+          try {
+            var url = new URL(location);
+            url.searchParams.delete(param);
+            replace = url.href;
+          } catch (ex) {
+            var regExp = new RegExp("[?&]" + param + "=.*$");
+            replace = location.search.replace(regExp, "");
+            replace = location.pathname + replace + location.hash;
+          }
+          history.replaceState(null, "", replace);
+        }
+      })();
+      // ----------------
 
-            function getAllProjects(){
-                fetch('https://api.github.com/users/jaymar921/repos')
-                .then(response => response.json())
-                .then(data => {
-                    const projectElement = document.getElementById('projects-card');
-                    let num = 1;
-                    data.forEach(element => {
+      function getAllProjects() {
+        fetch("https://api.github.com/users/jaymar921/repos")
+          .then((response) => response.json())
+          .then((data) => {
+            const projectElement = document.getElementById("projects-card");
+            let num = 1;
+            data.forEach((element) => {
+              if (num++ >= 20) return;
 
-                        if(num++ >= 20)
-                            return;
-                        
-                        let card = document.createElement('div');
-                        card.classList.add('v1-card');
-                        card.onclick = function(){
-                            window.open(element.html_url, '_blank');
-                        }
+              let card = document.createElement("div");
+              card.classList.add("v1-card");
+              card.onclick = function () {
+                window.open(element.html_url, "_blank");
+              };
 
-                        let title = document.createElement('h3');
-                        title.innerText = element.name;
+              let title = document.createElement("h3");
+              title.innerText = element.name;
 
-                        let description = document.createElement('p');
-                        description.classList.add('description');
-                        description.innerText = element.description;
+              let description = document.createElement("p");
+              description.classList.add("description");
+              description.innerText = element.description;
 
-                        let language = document.createElement('h2');
-                        language.innerText = element.language!=null?element.language:'ㅤ';
+              let language = document.createElement("h2");
+              language.innerText =
+                element.language != null ? element.language : "ㅤ";
 
-                        let flex = document.createElement('div');
-                        flex.classList.add('v1-card-flex');
+              let flex = document.createElement("div");
+              flex.classList.add("v1-card-flex");
 
-                        let star = document.createElement('h4');
-                        star.innerHTML = '<i class="fa-solid fa-star" style="color: yellow;"></i> ' + element.stargazers_count;
+              let star = document.createElement("h4");
+              star.innerHTML =
+                '<i class="fa-solid fa-star" style="color: yellow;"></i> ' +
+                element.stargazers_count;
 
-                        let eye = document.createElement('h4');
-                        eye.innerHTML = '<i class="fa-solid fa-eye" style="color: #424242;"></i> ' + element.watchers_count;
+              let eye = document.createElement("h4");
+              eye.innerHTML =
+                '<i class="fa-solid fa-eye" style="color: #424242;"></i> ' +
+                element.watchers_count;
 
-                        let topics = document.createElement('p');
-                        topics.classList.add('topics');
+              let topics = document.createElement("p");
+              topics.classList.add("topics");
 
-                        let book = document.createElement('i');
-                        book.classList.add('fa-solid', 'fa-book');
+              let book = document.createElement("i");
+              book.classList.add("fa-solid", "fa-book");
 
-                        let topic = '';
+              let topic = "";
 
-                        element.topics.forEach(element => {
-                            topic += element + ', ';
-                        });
-                        topics.innerHTML = '<i class="fa-solid fa-book"></i> ' + topic;
+              element.topics.forEach((element) => {
+                topic += element + ", ";
+              });
+              topics.innerHTML = '<i class="fa-solid fa-book"></i> ' + topic;
 
-                        if(element.topics.length === 0){
-                            topics.innerHTML = 'ㅤ';
-                        }
+              if (element.topics.length === 0) {
+                topics.innerHTML = "ㅤ";
+              }
 
-                        flex.appendChild(star);
-                        flex.appendChild(eye);
-                        card.appendChild(flex);
-                        card.appendChild(language);
-                        
-                        card.appendChild(topics);
-                        card.appendChild(title);
-                        
-                        card.appendChild(description);
-                        
+              flex.appendChild(star);
+              flex.appendChild(eye);
+              card.appendChild(flex);
+              card.appendChild(language);
 
-                        projectElement.appendChild(card);
-                    });
-                })
-            };
-            getAllProjects();
-        </script>
-    </body>
+              card.appendChild(topics);
+              card.appendChild(title);
+
+              card.appendChild(description);
+
+              projectElement.appendChild(card);
+            });
+          });
+      }
+      getAllProjects();
+
+      (() => {
+        let res = confirm(
+          "This portfolio is outdated. Do you want to visit the new portfolio site?",
+        );
+        if (res) {
+          window.location.href = "https://jayharronabejar.vercel.app";
+        }
+      })();
+    </script>
+  </body>
 </html>
